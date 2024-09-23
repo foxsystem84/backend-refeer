@@ -168,7 +168,7 @@ class PtiController extends Controller
             ]);
     }
 
-    public function delete($id)
+    public function destroy($id)
     {
         $pti = Pti::findOrFail($id);
         $pti->delete();

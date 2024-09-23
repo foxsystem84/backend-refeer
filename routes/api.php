@@ -15,5 +15,6 @@ Route::post('/register', [AuthController::class, "register"]);
 
 
 Route::get('/pti/{userId}', [PtiController::class, "getPtisbyUser"]);
+Route::delete('/pti/{userId}', [PtiController::class, "destroy"]);
 Route::get('/pti', [PtiController::class, "index"]);
 Route::post('/pti', [PtiController::class, "store"]);
